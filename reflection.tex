@@ -13,7 +13,14 @@ Neural Network 的學習，主要是透過微分。與課程之前，我已預�
 
 Neural Network 之所以強大， 就是因為「深度」。他可分析出的特徵比以前的方法都還強大，更重要的是還能「學習」。只要提供資料，他就可以自行去找出資料中的特徵。
 
-在課程之餘，我也參加了 Kaggle Digit Recognizer 競賽，實際動手總是比純聽課還要有更好的效果。此競賽我訓練 Neural Network 大約花了二十分鐘，可見運算資源的重要性。
+在課程之餘，我也參加了 Kaggle Digit Recognizer 競賽，實際動手總是比純聽課還要有更好的效果。在比賽中，我原本 Neural Network 所設置的層數較多，後來經過了一些調整，發現2層卷積層接上2層全連結層配上一些 Dropout 層效果最佳，最終達到超過99\%的 accuracy 。
+
+\begin{figure}[H]
+    \centering
+    \caption{Kaggle 競賽排名}
+    \includegraphics[width=.7\columnwidth]{kaggle_rank}
+\end{figure}
+
 
 在課程之中，我完成了音樂生成 、 Neural Style Transfer 、 Object Detection 等現今常見的 Neural Network 應用。其中，Neural Style Transfer 是我最感興趣的部分，竟然可以從已訓練好的 Neural Network 中這樣子取得 $ Style $，這讓我十分的佩服。算式如下，簡單來講就是一張圖片出現某種特徵時，是否伴隨這另一種特徵，如紅底伴隨著斜線出現、漩渦伴隨著藍與黃色等。這些特徵通常都出現在 Neural Network 的中間層，所以通常採用中間層的輸出。
 
